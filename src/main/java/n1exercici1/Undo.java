@@ -14,6 +14,9 @@ public class Undo {
     public static Undo getInstance() {
         if (instance == null) {
             instance = new Undo();
+            System.out.println("Se ha instanciado la clase");
+        }else {
+            System.out.println("La clase ya estaba instanciada");
         }
         return instance;
     }
@@ -21,14 +24,17 @@ public class Undo {
     public void addComando (String comand) {
 
         comandos.add(comand);
+        System.out.println("Se ha añadido " + comand);
     }
 
-    public void deleteComando (String comand) {
-        comand = comand.toLowerCase();
-        if (comandos.contains(comand)) {
-            comandos.remove(comand);
+    public void deleteComando () {
+
+        if (comandos.isEmpty()){
+            System.out.println("La lista está vacia");
         }else{
-            System.out.println("El comando " + comand + " no está en la lista");
+           comandos.remove(comandos.size()-1);
+            System.out.println("Se ha eliminado la última posición de la lista" );
+
         }
     }
     public void printComnandos(){
