@@ -15,6 +15,7 @@ public class Main {
         undo1.addComando("dosPuntos");
         undo.addComando("arriba");
         undo1.addComando("abajo");
+        undo.addComando("izquierda");
         undo.printComnandos();
         undo1.deleteComando();
         undo.printComnandos();
