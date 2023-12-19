@@ -10,9 +10,8 @@ public class Main {
         App app = configAgenda();
         app.addNewAgendaEntry();
         agenda.add(app);
-    @/* TODO: 28/11/23 Como metemos las entradas en la agenda?, como enviamos los datos de la agenda a la aplicación,
-        por donde pasamos los parametros
-
+     /*Como metemos las entradas en la agenda?, como enviamos los datos de la agenda a la aplicacion,
+            por donde pasamos los parametros*/
     }
 
     private static App configAgenda (){
