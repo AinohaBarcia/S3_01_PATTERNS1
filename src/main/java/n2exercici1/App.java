@@ -4,8 +4,6 @@ import org.jetbrains.annotations.NotNull;
 
 public class App {
 
-    //todo crear Map donde almacenar las direccoipnes guardar en tremMap
-    // crear clase agenda donde recojo las entradas de las direcciones.
     private String name;
     private enum typeAddress {american,italian};
     private IPhone phone;

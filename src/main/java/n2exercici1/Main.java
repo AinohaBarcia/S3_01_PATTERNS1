@@ -19,9 +19,9 @@ public class Main {
         String american = System.getProperty("os.name").toLowerCase();
 
         if (american.contains("american")) {
-            agendaFactory = new AmericanAgendaFactory();
+            agendaFactory = new AmericanAgendaFactory("Jason","Lee","Av. Street 54",98432456);
         } else {
-            agendaFactory = new ItalianAgendaFactory();
+            agendaFactory = new ItalianAgendaFactory("Paola","Sanmarino","Strada San Marco 23", 765689);
         }
         app = new App(agendaFactory);
         return app;
