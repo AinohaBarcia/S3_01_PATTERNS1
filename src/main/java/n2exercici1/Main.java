@@ -11,8 +11,6 @@ public class Main {
         app.addNewAgendaEntry();
         agenda.add(app);
 
-     /*Como metemos las entradas en la agenda?, como enviamos los datos de la agenda a la aplicacion,
-            por donde pasamos los parametros*/
     }
 
     private static App configAgenda (){
